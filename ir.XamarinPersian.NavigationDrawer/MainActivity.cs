@@ -6,9 +6,9 @@ using Android.Support.V7.App;
 using Android.Views;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
 
-namespace ir.XamarinPersian.MaterialDesign
+namespace ir.XamarinPersian.NavigationDrawer
 {
-    [Activity(Label = "MaterialDesign", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "NavigationDrawer", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
