@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ir.XamarinPersian.MaterialDesign", "ir.XamarinPersian.MaterialDesign\ir.XamarinPersian.MaterialDesign.csproj", "{C7E5DEDA-3357-4FD9-95DF-235B799E7171}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ir.XamarinPersian.NavigationDrawer", "ir.XamarinPersian.NavigationDrawer\ir.XamarinPersian.NavigationDrawer.csproj", "{BDE2C88C-6E3F-4EC4-AC8C-ED499B53842A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ir.XamarinPersian.SmsManager", "ir.XamarinPersian.SmsManager\ir.XamarinPersian.SmsManager.csproj", "{73F7B574-214E-4517-932B-57A0C9577F84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,18 @@ Global
 		{C7E5DEDA-3357-4FD9-95DF-235B799E7171}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7E5DEDA-3357-4FD9-95DF-235B799E7171}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C7E5DEDA-3357-4FD9-95DF-235B799E7171}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BDE2C88C-6E3F-4EC4-AC8C-ED499B53842A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE2C88C-6E3F-4EC4-AC8C-ED499B53842A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE2C88C-6E3F-4EC4-AC8C-ED499B53842A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BDE2C88C-6E3F-4EC4-AC8C-ED499B53842A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE2C88C-6E3F-4EC4-AC8C-ED499B53842A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE2C88C-6E3F-4EC4-AC8C-ED499B53842A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{73F7B574-214E-4517-932B-57A0C9577F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F7B574-214E-4517-932B-57A0C9577F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F7B574-214E-4517-932B-57A0C9577F84}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{73F7B574-214E-4517-932B-57A0C9577F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F7B574-214E-4517-932B-57A0C9577F84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F7B574-214E-4517-932B-57A0C9577F84}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
