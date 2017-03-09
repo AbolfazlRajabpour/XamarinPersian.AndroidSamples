@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ir.XamarinPersian.Navigatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ir.XamarinPersian.SmsManager", "ir.XamarinPersian.SmsManager\ir.XamarinPersian.SmsManager.csproj", "{73F7B574-214E-4517-932B-57A0C9577F84}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ir.XamarinPersian.ContactsAndCall", "ir.XamarinPersian.ContactsAndCall\ir.XamarinPersian.ContactsAndCall.csproj", "{F6A20A99-43F0-4224-809B-3E423407808C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{73F7B574-214E-4517-932B-57A0C9577F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73F7B574-214E-4517-932B-57A0C9577F84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{73F7B574-214E-4517-932B-57A0C9577F84}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F6A20A99-43F0-4224-809B-3E423407808C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A20A99-43F0-4224-809B-3E423407808C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A20A99-43F0-4224-809B-3E423407808C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F6A20A99-43F0-4224-809B-3E423407808C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A20A99-43F0-4224-809B-3E423407808C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A20A99-43F0-4224-809B-3E423407808C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

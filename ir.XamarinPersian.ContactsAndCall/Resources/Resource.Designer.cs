@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("ir.XamarinPersian.SmsManager.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("ir.XamarinPersian.ContactsAndCall.Resource", IsApplication=true)]
 
-namespace ir.XamarinPersian.SmsManager
+namespace ir.XamarinPersian.ContactsAndCall
 {
 	
 	
@@ -61,10 +61,10 @@ namespace ir.XamarinPersian.SmsManager
 		{
 			
 			// aapt resource value: 0x7f050000
-			public const int buttonSendBack = 2131034112;
+			public const int buttonCall = 2131034112;
 			
 			// aapt resource value: 0x7f050001
-			public const int buttonSendViaIntent = 2131034113;
+			public const int listViewContacts = 2131034113;
 			
 			static Id()
 			{
