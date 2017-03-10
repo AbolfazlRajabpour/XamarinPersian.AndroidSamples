@@ -12,75 +12,50 @@ namespace ir.XamarinPersian.NavigationDrawer
     [Activity(Label = "NavigationDrawer", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : AppCompatActivity
     {
-        DrawerLayout drawerLayout;
-        NavigationView navigationView;
+		DrawerLayout drawerLayout;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
-            //if (Window.DecorView.LayoutDirection == LayoutDirection.Ltr)
-            //{
-            //    Window.DecorView.LayoutDirection = LayoutDirection.Rtl;
-            //}
-
-            // Set our view from the "main" layout resource
+            // Create UI
             SetContentView(Resource.Layout.Main);
-
-            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
-            //Toolbar will now take on default actionbar characteristics
-            SetSupportActionBar(toolbar);
-            SupportActionBar.Title = "Hello from Xamarin-persian.ir";
-            //SupportActionBar.SetHomeButtonEnabled(true);
-            SupportActionBar.SetDisplayHomeAsUpEnabled(true);
-            //SupportActionBar.SetHomeAsUpIndicator(Android.Resource.Drawable.IcMenuView);
-
             drawerLayout = FindViewById<DrawerLayout>(Resource.Id.drawer_layout);
-            navigationView = FindViewById<NavigationView>(Resource.Id.navigation_view);
 
-            navigationView.NavigationItemSelected += (sender, e) =>
-            {
-                e.MenuItem.SetChecked(true);
-                //react to click here and swap fragments or navigate
-                drawerLayout.CloseDrawers();
-            };
+            // Init toolbar
+            var toolbar = FindViewById<Toolbar>(Resource.Id.toolbar);
+            SetSupportActionBar(toolbar);
+
+            // Attach item selected handler to navigation view
+            var navigationView = FindViewById<NavigationView>(Resource.Id.nav_view);
+            navigationView.NavigationItemSelected += NavigationView_NavigationItemSelected;
+
+            // Create ActionBarDrawerToggle button and add it to the toolbar
+            var drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, Resource.String.open_drawer, Resource.String.close_drawer);
+            drawerLayout.SetDrawerListener(drawerToggle);
+            drawerToggle.SyncState();
         }
 
-        public override bool OnCreateOptionsMenu(IMenu menu)
+        void NavigationView_NavigationItemSelected(object sender, NavigationView.NavigationItemSelectedEventArgs e)
         {
-            MenuInflater.Inflate(Resource.Layout.main_menu, menu);
-            return base.OnCreateOptionsMenu(menu);
-        }
-
-        public override bool OnOptionsItemSelected(IMenuItem item)
-        {
-            int itemId = item.ItemId;
-
-            drawerLayout.OpenDrawer(Android.Support.V4.View.GravityCompat.End);
-            //drawerLayout.OpenDrawer(Android.Support.V4.View.GravityCompat.Start);
-
-            string btnName = null;
-            switch (itemId)
+            switch (e.MenuItem.ItemId)
             {
-                case Resource.Id.menu_settings:
-                    btnName = "Settings";
+                case (Resource.Id.nav_home):
+                    // React on 'Home' selection
                     break;
-                case Resource.Id.menu_compass:
-                    btnName = "Compass";
+                case (Resource.Id.nav_messages):
+                    // React on 'Messages' selection
                     break;
-                case Resource.Id.menu_help:
-                    btnName = "Help";
-
+                case (Resource.Id.nav_friends):
+                    // React on 'Friends' selection
+                    break;
+                case (Resource.Id.nav_discussion):
+                    // React on 'Discussion' selection
                     break;
             }
 
-            var linearLayout = FindViewById<LinearLayout>(Resource.Id.main_content);
-            Snackbar.Make(linearLayout, "click " + btnName, Snackbar.LengthLong)
-                .SetAction("ok", (view) => { /*Undo message sending here.*/ })
-                .Show(); // Don’t forget to show!
-
-            return base.OnOptionsItemSelected(item);
+            // Close drawer
+            drawerLayout.CloseDrawers();
         }
     }
 }
-
